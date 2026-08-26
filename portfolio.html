@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiebke Lutz – UI/UX Design & HCI Research</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- GLightbox CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/css/glightbox.min.css">
+
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html#hero" class="nav-name">Wiebke Lutz</a>
+    <ul class="nav-links">
+      <li><a href="index.html#projekte">Ausgewählte Projekte</a></li>
+      <li><a href="index.html#info">Kompetenzen</a></li>
+      <li><a href="index.html#info">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- PROJEKTE -->
+    <section id="projekte">
+        <div class="section-label">Portfolio</div>
+        <div class="cases">
+
+
+        <!-- VORLAGE -->
+            <div class="case">
+                <div>
+                    <div class="case-header">
+                        <span class="case-num"># <span class="dot">·</span> ## - ## </span>
+                        <span class="case-type">[Abschlussprojekt / Forschungsprojekt / studentisches Projekt]</span>
+                    </div>
+                    <div class="case-title">
+                        [Projekt] 
+                        <span class="dot">·</span> 
+                        [Name]
+                    </div>
+                    <div class="case-org">
+                        <span>Universität zu Lübeck </span>
+                        <span class="dot">·</span>
+                        <span>[Wissenschaftliche / Studentische Hilfskraft / Bachelor-Projekt / Bachelor-Arbeit]</span> 
+                    </div>
+                    <p class="case-desc">[Beschreibung]]</p>
+                    <div class="case-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">User Research</span>
+                        <span class="tag">Usability-Tests</span>
+                        <span class="tag">Design Guidelines</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Interviews</span>
+                        <span class="tag">Personas</span>
+                        <span class="tag">User Journeys</span>
+                        <span class="tag">Agile Methoden</span>
+                        <span class="tag">Wireframing</span>
+                        <span class="tag">Accessibility</span>
+                    </div>
+                </div>
+                <!-- normales Bild:
+                <div class="case-img">
+                    Projektbild   
+                </div> -->
+
+
+                <!-- Galerie mit GLightbox -->
+                <div class="case-img">
+                    <a href="img/MariData1.svg"
+                        class="glightbox"
+                        data-gallery="galerie_MariData"
+                        data-title="Mein Bild"
+                        data-description="Eine kurze Beschreibung.1">
+
+                        <img src="img/MariData1.svg" alt="Mein Bild">
+                    </a>
+                    
+                </div>
+            
+            </div>
+
+        <!-- MariData -->
+            <div class="case">
+                <div>
+                    <div class="case-header">
+                        <span class="case-num"># <span class="dot">·</span> 2023 - 2024 </span>
+                        <span class="case-type">Forschungsprojekt</span>
+                    </div>
+                    <div class="case-title">
+                        MariData 
+                        <span class="dot">·</span> 
+                        Seekarte für die Schifffahrt
+                    </div>
+                    <div class="case-org">
+                        <span>Universität zu Lübeck </span>
+                        <span class="dot">·</span>
+                        <span>Wissenschaftliche Hilfskraft</span> 
+                    </div>
+                    <p class="case-desc">Im Projekt MariData soll ein zukunftsweisendes, auf rationalen Methoden basierendes Energiemanagement und Decision Support System unter Berücksichtigung aktueller betrieblicher Zustandsdaten sowie Geoinformationen entwickelt werden.</p>
+                    <div class="case-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">User Research</span>
+                        <span class="tag">Usability-Tests</span>
+                        <span class="tag">Design Guidelines</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Interviews</span>
+                        <span class="tag">Agile Methoden</span>
+                    </div>
+                </div>
+                <div class="case-img">
+                    <a href="img/MariData1.svg"
+                        class="glightbox"
+                        data-gallery="galerie_MariData"
+                        data-title="Mein Bild"
+                        data-description="Eine kurze Beschreibung.1">
+
+                        <img src="img/MariData1.svg" alt="Mein Bild">
+                    </a>
+                </div>
+            </div>
+
+
+
+    </div>
+  </section>
+</div>
+
+
+
+<!-- Galerie -->
+
+<!--Vorlage -->
+    <a href="img/MariData1.svg"
+        class="glightbox"
+        data-gallery="galerie_MariData"
+        data-title="Mein Bild"
+        data-description="Eine kurze Beschreibung.3"
+        data-alt="Beschreibung des Bildes 3">
+    </a>  
+
+<!-- GLightbox JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.1/dist/js/glightbox.min.js"></script>
+
+    <!-- GLightbox starten -->
+    <script>
+        const lightbox = GLightbox({
+            selector: '.glightbox'
+        });
+    </script>
+</body>
