@@ -1,0 +1,52 @@
+<!-- VORLAGE -->
+            <div class="case">
+                <div>
+                    <div class="case-header">
+                        <span class="case-num"># <span class="dot">·</span> ## - ## </span>
+                        <span class="case-type">[Abschlussprojekt / Forschungsprojekt / studentisches Projekt]</span>
+                    </div>
+                    <div class="case-title">
+                        [Projekt] 
+                        <span class="dot">·</span> 
+                        [Name]
+                    </div>
+                    <div class="case-org">
+                        <span>Universität zu Lübeck </span>
+                        <span class="dot">·</span>
+                        <span>[Wissenschaftliche / Studentische Hilfskraft / Bachelor-Projekt / Bachelor-Arbeit]</span> 
+                    </div>
+                    <p class="case-desc">[Beschreibung]]</p>
+                    <div class="case-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">User Research</span>
+                        <span class="tag">Usability-Tests</span>
+                        <span class="tag">Design Guidelines</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Interviews</span>
+                        <span class="tag">Personas</span>
+                        <span class="tag">User Journeys</span>
+                        <span class="tag">Agile Methoden</span>
+                        <span class="tag">Wireframing</span>
+                        <span class="tag">Accessibility</span>
+                    </div>
+                </div>
+                <!-- normales Bild:
+                <div class="case-img">
+                    Projektbild   
+                </div> -->
+
+
+                <!-- Galerie mit GLightbox -->
+                <div class="case-img">
+                    <a href="img/MariData1.svg"
+                        class="glightbox"
+                        data-gallery="galerie_MariData"
+                        data-title="Mein Bild"
+                        data-description="Eine kurze Beschreibung.1">
+
+                        <img src="img/MariData1.svg" alt="Mein Bild">
+                    </a>
+                    
+                </div>
+            
+            </div>

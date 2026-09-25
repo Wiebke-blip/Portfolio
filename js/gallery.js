@@ -1,34 +1,24 @@
-const lightbox = GLightbox({
-    selector: '.glightbox',
-    descPosition: 'right'
-});
+const galleryElements = document.querySelectorAll('[data-gallery]');
 
-
-const gallery = document.getElementById('gallery');
-
-if (gallery) {
-
+const loadPromises = Array.from(galleryElements).map(gallery => {
     const galleryFile = gallery.dataset.gallery;
 
-    fetch(`./${galleryFile}`)
+    return fetch(`./${galleryFile}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Galerie konnte nicht geladen werden: ${response.status}`);
             }
-
             return response.text();
         })
         .then(html => {
-
             gallery.innerHTML = html;
-
-            GLightbox({
-                selector: '.glightbox',
-                descPosition: 'right'
-            });
-
         })
-        .catch(error => {
-            console.error(error);
-        });
-}
+        .catch(error => console.error(error));
+});
+
+Promise.all(loadPromises).then(() => {
+    new GLightbox({
+        selector: '.glightbox',
+        descPosition: 'right'
+    });
+});

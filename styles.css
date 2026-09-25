@@ -16,8 +16,11 @@
   }
 
   html { scroll-behavior: smooth; }
+  
 .glightbox img {
     cursor: pointer;
+    /* display: flex;
+    align-items: center; */
 }
   body {
     font-family: 'Inter', sans-serif;
@@ -250,10 +253,11 @@
     /* width: 100%; */
     height: 180px;
     width: 180px;
-    object-position: top;
-    object-fit:fill;
+    object-position: center;
+    object-fit:scale-down;
     /* background: var(--blue-light); */
     /* border: 0.5px solid var(--blue-border); */
+    
     border-radius: 3px;
     display: flex;
     flex-direction: column;
@@ -266,20 +270,38 @@
     /* overflow: hidden; */
   }
 
-  .case-img figcaption {
+  .figcaption {
     font-size: 11px;
-    color: #7a9fc0;
+    color: var(--muted);
     text-align: center;
-    padding: 4px 6px;
-    background: var(--blue-light);
+    /* padding: 4px 6px; */
+    /* background: var(--blue-light); */
+    
   }
 
   .case-img img {
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 100%;
     height: 100%;
     object-fit:scale-down;
     display: block;
   }
+
+  .case-img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.gallery-extra {
+    display: none;
+}
+
 
   /* BOTTOM GRID */
   #info { padding: 52px 0 64px; }
